@@ -69,12 +69,12 @@ http://www.pointclouds.org/downloads/windows.html
 **Finally** obstacle clustering and the application of bounding boxes is appled to identify seperate obstacles. There are two bounging box methods.
 * The first bounding box is takes the min and maximum points of each obstacle and creates a box around it as shown.
 <p align="center">
-<img src="./gifs/bounding_box.png" alt="pcd_data" style="zoom: 200%;"/>
+<img src="./gifs/bounding_box.png" alt="bbox" style="zoom: 200%;"/>
 </p>
 * The second uses PCA to find the minimum box representation for all obstacles.
 <p align="center">
-<img src="./gifs/rotated_bounding.png" alt="pcd_data" style="zoom: 200%;"/>
+<img src="./gifs/rotated_bounding.png" alt="rot_bbox" style="zoom: 200%;"/>
 </p>
 
-**Finally**
+**The** PCA method would probably be better for drones or situations where the moving object is not restricted to the a plane. 
 
