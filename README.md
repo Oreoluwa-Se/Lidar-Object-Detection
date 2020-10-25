@@ -52,19 +52,29 @@ http://www.pointclouds.org/downloads/windows.html
 
 # Results:
 * Loading the point data cloud files from a vehicle in traffic provided by udacity.
-
-![](gifs/pcd.png)
+<p align="center">
+<img src="./gifs/pcd.png" alt="pcd_data" style="zoom: 200%;"/>
+</p>
 
 * The first step is to filter and downsample the point clouds into voxels here by reducing the data size for object detection. The voxel cube used was 0.5 m as well as restricting the view field to a 60**m** x 14**m** x 8**m** centered we get the following output.
-![](gifs/filtered_points.gif)
+<p align="center">
+<img src="./gifs/filtered_points.gif" alt="filtered" style="zoom: 200%;"/>
+</p>
 
 * Next step is to segment the data into obstacles and the road.
-![]("./gifs/segmented.gif")
+<p align="center">
+<img src="./gifs/segmented.gif" alt="segmented" style="zoom: 200%;"/>
+</p>
+
 **Finally** obstacle clustering and the application of bounding boxes is appled to identify seperate obstacles. There are two bounging box methods.
 * The first bounding box is takes the min and maximum points of each obstacle and creates a box around it as shown.
-![]("./gifs/bounding_box.gif)
+<p align="center">
+<img src="./gifs/bounding_box.gif" alt="bbox" style="zoom: 200%;"/>
+</p>
 * The second uses PCA to find the minimum box representation for all obstacles.
-![]("./gifs/rotated_bounding.gif")
+<p align="center">
+<img src="./gifs/rotated_bounding.gif" alt="rot_bbox" style="zoom: 200%;"/>
+</p>
 
 **The** PCA method would probably be better for drones or situations where the moving object is not restricted to the a plane. 
 
