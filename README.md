@@ -52,9 +52,12 @@ http://www.pointclouds.org/downloads/windows.html
 
 # Results:
 * Loading the point data cloud files from a vehicle in traffic provided by udacity.
+
 ![](gifs/pcd.png)
+
 * The first step is to filter and downsample the point clouds into voxels here by reducing the data size for object detection. The voxel cube used was 0.5 m as well as restricting the view field to a 60**m** x 14**m** x 8**m** centered we get the following output.
 ![](gifs/filtered_points.gif)
+
 * Next step is to segment the data into obstacles and the road.
 ![]("./gifs/segmented.gif")
 **Finally** obstacle clustering and the application of bounding boxes is appled to identify seperate obstacles. There are two bounging box methods.
