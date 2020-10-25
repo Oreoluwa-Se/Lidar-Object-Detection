@@ -23,10 +23,30 @@ The project directory should be similar to:
 │   │   ├── render.h                # header file for rendering images   
 │   ├── sensors                     # stores lidar data
 │   │   ├── data                    # stores pcd data
-│   ├── environment.cpp             # main program for insta
+│   ├── environment.cpp             # main program for instantiating environment and running scripts
 │   ├── processPointClouds.cpp      # contains functions for processing point clouds
 │   ├── processPointClouds.h        # header file for point cloud processing
 ├── CMakeLists
 ├── Readme.md
 
 ```
+
+## Installation
+### Ubuntu 
+
+```bash
+$> sudo apt install libpcl-dev
+$> cd ~
+$> git clone https://github.com/udacity/SFND_Lidar_Obstacle_Detection.git
+$> cd SFND_Lidar_Obstacle_Detection
+$> mkdir build && cd build
+$> cmake ..
+$> make
+$> ./environment
+```
+
+### Windows 
+
+http://www.pointclouds.org/downloads/windows.html
+
+# Results:
