@@ -10,10 +10,11 @@ The project directory should be similar to:
 ├── build                           # build files for program
 │   ├── ...
 │── gifs                            # stores video output from project                   
-│   ├── filtered_points.gifs
-│   ├── bounding_box.gifs
-│   ├── rotated_bounding.gifs
-│   ├── segmented.gifs
+│   ├── filtered_points.gif
+│   ├── bounding_box.gif
+│   ├── rotated_bounding.gif
+│   ├── segmented.gif
+│   ├── pcd.png
 ├── src                     
 │   ├── helper                      # helper functions for program
 │   │   ├── ransac3d.h              # utility function which used to segment data points
@@ -50,3 +51,19 @@ $> ./environment
 http://www.pointclouds.org/downloads/windows.html
 
 # Results:
+Loading the point data cloud files from a vehicle in traffic provided by udacity.
+<p align="center">
+<img src="./gifs/pcd.png" alt="pcd_data" style="zoom: 200%;"/>
+</p>
+
+The first step is to filter and downsample the point clouds into voxels here by reducing the data size for object detection. The voxel cube used was 0.5 m as well as restricting the view field to a 60m x 14m x 8m centered we get the following output
+<p align="center">
+<img src="./gifs/filtered_points.gif" alt="filtered" style="zoom: 200%;"/>
+</p>
+
+Next step is to segment the data into obstacles and the road.
+<p align="center">
+<img src="./gifs/segmented.gif" alt="segmented" style="zoom: 200%;"/>
+</p>
+
+

@@ -38,7 +38,7 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
     
     // filter cloud
     typename pcl::PointCloud<PointT>::Ptr filtered_cloud= pointProcessor->FilterCloud(inputCloud, 0.3,
-    	Eigen::Vector4f (-20, -5.5, -4, 1), Eigen::Vector4f (30, 7, 4, 1));
+    	Eigen::Vector4f (-20, -7, -4, 1), Eigen::Vector4f (20, 7, 4, 1));
     //renderPointCloud(viewer, filtered_cloud, "filterCloud");
 
     // segment into road and obstacles
