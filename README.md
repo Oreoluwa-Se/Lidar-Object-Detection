@@ -7,22 +7,22 @@
 # Project Directory:
 The project directory should be similar to:
 ```
-├── build                			# build files for program
+├── build                           # build files for program
 │   ├── ...
-│── gifs                  			# stores video output from project                   
+│── gifs                            # stores video output from project                   
 │   ├── filtered_points.gifs
 │   ├── bounding_box.gifs
 │   ├── rotated_bounding.gifs
 │   ├── segmented.gifs
 ├── src                     
-│   ├── helper         	  			# helper functions for program
-│   │   ├── ransac3d.h    			# utility function which used to segment data points
-│   ├── render           			# simulates the PI controller
-│   │   ├── box.h    				# stores structs for box definition
-│   │   ├── render.cpp    			# function used for image display
-│   │   ├── render.h    			# header file for rendering images   
-│   ├── sensors    					# stores lidar data
-│   │   ├── data    				# stores pcd data
+│   ├── helper                      # helper functions for program
+│   │   ├── ransac3d.h              # utility function which used to segment data points
+│   ├── render                      # simulates the PI controller
+│   │   ├── box.h                   # stores structs for box definition
+│   │   ├── render.cpp              # function used for image display
+│   │   ├── render.h                # header file for rendering images   
+│   ├── sensors                     # stores lidar data
+│   │   ├── data                    # stores pcd data
 │   ├── environment.cpp             # main program for insta
 │   ├── processPointClouds.cpp      # contains functions for processing point clouds
 │   ├── processPointClouds.h        # header file for point cloud processing
